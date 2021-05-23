@@ -1,0 +1,100 @@
+{
+  "configVersion": 1,
+  "timestamp": 1621792197576,
+  "index": "/CocktailApp/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/CocktailApp/favicon.ico",
+        "/CocktailApp/index.html",
+        "/CocktailApp/main.4478f4cd0feded582e75.js",
+        "/CocktailApp/manifest.webmanifest",
+        "/CocktailApp/polyfills.94daefd414b8355106ab.js",
+        "/CocktailApp/runtime.7b63b9fd40098a2e8207.js",
+        "/CocktailApp/styles.5f0717fb6a2c8f5521f3.css"
+      ],
+      "patterns": [
+        "https:\\/\\/cdn\\.jsdelivr\\.net\\/npm\\/bootstrap@5\\.0\\.1\\/dist\\/css\\/bootstrap\\.min\\.css"
+      ]
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/CocktailApp/assets/icons/icon-128x128.png",
+        "/CocktailApp/assets/icons/icon-144x144.png",
+        "/CocktailApp/assets/icons/icon-152x152.png",
+        "/CocktailApp/assets/icons/icon-192x192.png",
+        "/CocktailApp/assets/icons/icon-384x384.png",
+        "/CocktailApp/assets/icons/icon-512x512.png",
+        "/CocktailApp/assets/icons/icon-72x72.png",
+        "/CocktailApp/assets/icons/icon-96x96.png",
+        "/CocktailApp/assets/images/logo.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "cocktails-api",
+      "patterns": [
+        "https:\\/\\/www\\.thecocktaildb\\.com\\/api\\/json\\/v1\\/1\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 10,
+      "maxAge": 31536000000,
+      "timeoutMs": 1000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/CocktailApp/assets/icons/icon-128x128.png": "031b791a632bc94417554f87899eb35bae3c37e2",
+    "/CocktailApp/assets/icons/icon-144x144.png": "ff121ebaa5ce62def69c069fa9ad16349f2507d7",
+    "/CocktailApp/assets/icons/icon-152x152.png": "ce79a5807042d326f928b40cd14d55cfc8d90784",
+    "/CocktailApp/assets/icons/icon-192x192.png": "2c4e78627781d6353c602c05dac5ac89f7895e2c",
+    "/CocktailApp/assets/icons/icon-384x384.png": "2d8cd306fd4528595520c55a400874a541d2ea81",
+    "/CocktailApp/assets/icons/icon-512x512.png": "9c72eecedb576fec0b7b06483f35fb6a58fe8139",
+    "/CocktailApp/assets/icons/icon-72x72.png": "466742f9a46d5fbedf62af7f7441b65447fe3f0b",
+    "/CocktailApp/assets/icons/icon-96x96.png": "38591eb566ec9051605e3ee5f3f1d1407ace81dc",
+    "/CocktailApp/assets/images/logo.png": "7ab2b1804bad35cacb01025b9324e570980eec94",
+    "/CocktailApp/favicon.ico": "e3649ba390d614c39ffccda7ace760b881c60177",
+    "/CocktailApp/index.html": "79846a862cade48982144fd1c984337f4d4a1255",
+    "/CocktailApp/main.4478f4cd0feded582e75.js": "d04ed1c0d3a8a818a358f31dda2d00c5a176d9e6",
+    "/CocktailApp/manifest.webmanifest": "5ce2775034987f9aa112438df65e36776f19c06a",
+    "/CocktailApp/polyfills.94daefd414b8355106ab.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
+    "/CocktailApp/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/CocktailApp/styles.5f0717fb6a2c8f5521f3.css": "54f6895b93af45e0646a97255e976103c365a41f"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
