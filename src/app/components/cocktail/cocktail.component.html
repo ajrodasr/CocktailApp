@@ -1,0 +1,75 @@
+<div *ngIf="cocktail" class="container col-10 m-auto p-md-4">
+  <a
+    (click)="back()"
+    [class]="cocktail.strAlcoholic === 'Alcoholic' ? 'btn-warning' : 'btn-success'"
+    class="btn col-12 my-5"
+    >Back</a
+  >
+  <div
+    class="card mb-3"
+    [class]="
+      cocktail.strAlcoholic === 'Alcoholic' ? 'bg-warning text-dark' : 'bg-success text-white'
+    "
+  >
+    <img src="{{ cocktail.strDrinkThumb }}" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">{{ cocktail.strDrink }}</h5>
+      <p class="card-text">
+        <small>
+          <i> {{ cocktail.strCategory }} </i></small
+        >
+      </p>
+      <h6 class="card-text"><strong> Instructions</strong></h6>
+      <p class="card-text">{{ cocktail.strInstructions }}</p>
+      <p class="card-text"><strong>Glass: </strong> {{ cocktail.strGlass }}</p>
+      <h6 class="card-text"><strong>Ingredients</strong></h6>
+      <p class="card-text">
+        <span *ngIf="cocktail.strIngredient1"
+          >{{ cocktail.strIngredient1 }} ({{ cocktail.strMeasure1 }})</span
+        >
+        <span *ngIf="cocktail.strIngredient2"
+          >, {{ cocktail.strIngredient2 }} ({{ cocktail.strMeasure2 }})</span
+        >
+        <span *ngIf="cocktail.strIngredient3"
+          >, {{ cocktail.strIngredient3 }} ({{ cocktail.strMeasure3 }})</span
+        >
+        <span *ngIf="cocktail.strIngredient4"
+          >, {{ cocktail.strIngredient4 }} ({{ cocktail.strMeasure4 }})</span
+        >
+        <span *ngIf="cocktail.strIngredient5"
+          >, {{ cocktail.strIngredient5 }} ({{ cocktail.strMeasure5 }})</span
+        >
+        <span *ngIf="cocktail.strIngredient6"
+          >, {{ cocktail.strIngredient6 }} ({{ cocktail.strMeasure6 }})</span
+        >
+        <span *ngIf="cocktail.strIngredient7"
+          >, {{ cocktail.strIngredient7 }} ({{ cocktail.strMeasure7 }})</span
+        >
+        <span *ngIf="cocktail.strIngredient8"
+          >, {{ cocktail.strIngredient8 }} ({{ cocktail.strMeasure8 }})</span
+        >
+        <span *ngIf="cocktail.strIngredient9"
+          >, {{ cocktail.strIngredient9 }} ({{ cocktail.strMeasure9 }})</span
+        >
+        <span *ngIf="cocktail.strIngredient10"
+          >, {{ cocktail.strIngredient10 }} ({{ cocktail.strMeasure10 }})</span
+        >
+        <span *ngIf="cocktail.strIngredient11"
+          >, {{ cocktail.strIngredient11 }} ({{ cocktail.strMeasure11 }})</span
+        >
+        <span *ngIf="cocktail.strIngredient12"
+          >, {{ cocktail.strIngredient12 }} ({{ cocktail.strMeasure12 }})</span
+        >
+        <span *ngIf="cocktail.strIngredient13"
+          >, {{ cocktail.strIngredient13 }} ({{ cocktail.strMeasure13 }})</span
+        >
+        <span *ngIf="cocktail.strIngredient14"
+          >, {{ cocktail.strIngredient14 }} ({{ cocktail.strMeasure14 }})</span
+        >
+        <span *ngIf="cocktail.strIngredient15"
+          >, {{ cocktail.strIngredient15 }} ({{ cocktail.strMeasure15 }})</span
+        >
+      </p>
+    </div>
+  </div>
+</div>
